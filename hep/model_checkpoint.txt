@@ -1,0 +1,13 @@
+1) Model name is model_checkpoint and batch size is 20000
+2) Model has second derivative loss
+3) Model has 1 model with (50, 3) , with Tanh() activation function
+4) Model is trained with learning rate 0.001 and has 0.96 for 1000 epochs
+5) Model has the training dataset as v_t_swise_200nm_3M and has the test dataset as v_t_swise_200nm_3M
+7) tsi was taken as 200nm
+8) Model was trained with data dependent statistics
+9) Model has have L1 loss only.
+10) Model optimizer has no weight decay
+11) Model with variable tox
+12) Model has variable N_A
+13) Model has tox in 0.8nm to 1.5nm
+14) Model has N_A in 1e23 to 1e24
