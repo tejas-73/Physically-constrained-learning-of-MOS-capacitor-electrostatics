@@ -1,4 +1,4 @@
-# Unsupervised learning of physical principles of metal oxide semiconductor capacitor
+# Self-supervised learning of physical principles of metal oxide semiconductor capacitor
 Recent years have seen growing interest in using machine
 learning (ML) to solve differential equations. Such efforts,
 so far, have mainly been focused on computational aspects
