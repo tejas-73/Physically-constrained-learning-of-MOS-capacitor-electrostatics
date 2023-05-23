@@ -61,7 +61,7 @@ if parse.do_training and not parse.train_continue:
                  +f"3) Model has ({mid_neurons}, {n_hid}) , with Tanh() activation function\n"
                  +f"4) Model is trained with learning rate {parse.lr} and has 0.96 for 1000 epochs\n"
                  +f"5) Model has the training dataset as {parse.training_data_reference} and has the test dataset as {parse.test_data_reference}\n"
-               +"6) tsi was taken as 50nm\n"
+               +"6) tsi was taken as 200nm\n"
                 +"7) N_A was taken as 1e24\n"
                  +"8) Model was trained with data dependent statistics for standardizing the inputs\n"
                   +"9) Model has L1 loss only.\n"
