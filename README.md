@@ -1,0 +1,1 @@
+# Unsupervised-learning-of-physical-principles-of-metal-oxide-semiconductor-capacitor
