@@ -1,0 +1,19 @@
+1) Model name is model_PINN_actual and batch size is 20000
+2) Model has second derivative loss
+3) Model has 1 model with (50, 3) , with Tanh() activation function; The Model is new. Please refer the code, the model is joint. Has scaling factor as 1. Model as multiplication of vgs ahead of it.
+4) Model is trained with learning rate 0.001 and has 0.96 for 1000 epochs
+5) Model has the training dataset as v_t_swise_200nm_3M and has the test dataset as v_t_swise_200nm_3M
+6) Model was not introduced with psi_p
+7) tsi was taken as 200nm
+8) N_A wasn't constant
+9) Model was trained with data dependent statistics
+10) Model doesnot have L1 loss with 3 x torch.sqrt before.
+11) Model optimizer has no weight decay
+12) Model with variable tox
+13) Model has variable N_A
+14) Model has t_ox and N_A not as graph nodes
+15) Model has N_A in 0.1e24 to 1e24
+16) Model has no variable exponential
+17) PINN model, with $\lambda_1 = 10^{16}$ and $\lambda_2 = 10^{34}$
+
+PID -> 3132730
