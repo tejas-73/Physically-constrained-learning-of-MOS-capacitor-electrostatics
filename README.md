@@ -1,4 +1,5 @@
 # Unsupervised learning of physical principles of metal oxide semiconductor capacitor
+![Diagram](https://github.com/tejas-73/Unsupervised-learning-of-physical-principles-of-metal-oxide-semiconductor-capacitor/assets/97820591/038b6a67-cb45-4038-a880-9fe4e9ecbc3a)
 Recent years have seen growing interest in using machine
 learning (ML) to solve differential equations. Such efforts,
 so far, have mainly been focused on computational aspects
