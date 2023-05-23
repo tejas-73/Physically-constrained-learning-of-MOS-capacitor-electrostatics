@@ -17,4 +17,4 @@ also unravels the dependence of threshold voltage on oxide
 thickness and doping concentration. Extrapolation ability of the model further confirms that model has indeed
 learn the physical mechanism of the MOS capacitor rather
 memorizing the training results.
-![Diagram](https://github.com/tejas-73/Unsupervised-learning-of-physical-principles-of-metal-oxide-semiconductor-capacitor/assets/97820591/038b6a67-cb45-4038-a880-9fe4e9ecbc3a)
+![Diagram]([https://github.com/tejas-73/Unsupervised-learning-of-physical-principles-of-metal-oxide-semiconductor-capacitor/assets/97820591/038b6a67-cb45-4038-a880-9fe4e9ecbc3a](https://github.com/tejas-73/Unsupervised-learning-of-physical-principles-of-metal-oxide-semiconductor-capacitor/blob/main/Figures/Fig1.png))
