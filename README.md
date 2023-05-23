@@ -1,5 +1,4 @@
 # Unsupervised learning of physical principles of metal oxide semiconductor capacitor
-![Diagram](https://github.com/tejas-73/Unsupervised-learning-of-physical-principles-of-metal-oxide-semiconductor-capacitor/assets/97820591/038b6a67-cb45-4038-a880-9fe4e9ecbc3a)
 Recent years have seen growing interest in using machine
 learning (ML) to solve differential equations. Such efforts,
 so far, have mainly been focused on computational aspects
@@ -23,3 +22,4 @@ thickness and doping concentration. Extrapolation abil-
 ity of the model further confirms that model has indeed
 learn the physical mechanism of the MOS capacitor rather
 memorizing the training results.
+![Diagram](https://github.com/tejas-73/Unsupervised-learning-of-physical-principles-of-metal-oxide-semiconductor-capacitor/assets/97820591/038b6a67-cb45-4038-a880-9fe4e9ecbc3a)
