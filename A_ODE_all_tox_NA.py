@@ -568,7 +568,7 @@ if __name__ == '__main__':
                 for ind, i in enumerate(predp_list):
                     plt.semilogy(train_plot * 10 ** 9, np.abs(i - y_test_list[ind]), c=color_list[ind], mfc='none')
                 plt.xlabel('y (nm)')
-                plt.ylabel('$|\psi_{Numerical} - \psi_{ML}|$')
+                plt.ylabel('$|\psi_{Numerical} - \psi_{ML}| (V)$')
                 plt.xlim(-1)
                 plt.ylim(1e-11, 1e0)
                 plt.tight_layout()
