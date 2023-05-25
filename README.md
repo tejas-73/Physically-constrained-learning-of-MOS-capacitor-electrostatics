@@ -22,4 +22,17 @@ memorizing the training results.
 Getting acquinted to the scripts:
 
 _A_ODE_all_tox_NA.py_ is the one that has the model presented in the paper. It takes the following arguments:
+**Vgs**: type=float, Value of Vgs. Used during inference
+**t_ox**: type=float, tox value in nm. Used during inference
+**N_A**: type=float, N_A value as a coefficient to 1e24. Used during inference
+**train_samples**: type=int, Number of Training Samples. This is used during inference, when we need to sample for y. This number is the number of datapoints of y, uniformly sampled
+**batch_size**: type=int, Batch Size during training. During inference, this has a crucial role to play. If batch size = -1, then Inversion Charge characteristics, $V_T$ characteristics and $\eta_0$ characteristics are calculated. If batch size = 0, then predictions for a given Vgs is calculated. And also it plots the surface potential characteristics for V_G in [-3Vt, 3Vt]. Saves a csv file of the predictions. It also makes surface potential predictions with different device parameters. If batch size = 2, then saves a combine plot for $V_G$ in [-3Vt, 3Vt] and surface potential as well. If batch size other than above, then a document is created in which we can scrutinizingly observe the profile predictions.
+**lr**: type=float, learning rate of the adam optimizer
+**do_training**: type=int, Set 1 to perform Training, else setting this to zero will do the task of inference
+**train_continue**: type=int, Set 1 to train from the previously stored model else 0. This is for the case in which the preloaded model has to start training again
+**save_model**: type=int, save the model during training, this is for crosscheking. set 1 to save else 0. During inference, we use this as the epoch number at which we need the outputs
+**save_model_tag**: type=str, tag with which to save the model or saved model tag for inference. A folder will be created with this name and all the files and models will be stored in this. Also, this is the name that will be used, during inference.
+**training_data_reference**: type=str, tag for dataset to choose for training
+**test_data_reference**: type=str, tag for dataset to choose for training. Ensure this to be same as training_data_reference
+**update_text_file**: type=int, Update the text file. Ensure this to be zero. This is when in case mistakenly you type a save_model_tag to be the one which already exists. In case if you wish to update, then keep 1.
 
