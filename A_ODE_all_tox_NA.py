@@ -319,10 +319,6 @@ if __name__ == '__main__':
                 vgs = vgs.reshape((-1, 1)).to(device)
                 y.requires_grad = True
 
-                #shuffling the contents of the required sets
-                # shuffle(t_oox)
-                # shuffle(N_AA)
-
                 #selecting random indices to select the required elements from sets
                 indices = np.random.choice(28, size=y.shape, replace=True)
                 indices1 = np.random.choice(40, size=y.shape, replace=True)
