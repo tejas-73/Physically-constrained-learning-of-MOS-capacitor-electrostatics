@@ -19,23 +19,23 @@ learn the physical mechanism of the MOS capacitor rather
 memorizing the training results.
 
 
-Getting acquinted to the scripts:
+-> Getting acquinted to the scripts:
 
-**_A_ODE_all_tox_NA.py_**: is the script to run model optimization as presented in the paper. 
+a) **_A_ODE_all_tox_NA.py_**: is the script to run model optimization as presented in the paper. 
 
-**_PINN.py_**: is the model formulation with PINN approach
+b) **_PINN.py_**: is the model formulation with PINN approach
 
 Remaining scripts are being utilized by these two scripts.
 
-Folders:
+-> Folders:
 
-**_model_checkpoint_**: contains all the model saved at different epochs in the optimization process and can be used to generate different results.
+a) **_model_checkpoint_**: contains all the model saved at different epochs in the optimization process and can be used to generate different results.
 
-**_model_PINN_actual_**: contains all the PINN model at different epochs in the optimization process and can be used to generate different results. The results here are corresponding to $\lambda_1 = 10^{16}$ and $\lambda_2 = 10^{32}$
+b) **_model_PINN_actual_**: contains all the PINN model at different epochs in the optimization process and can be used to generate different results. The results here are corresponding to $\lambda_1 = 10^{16}$ and $\lambda_2 = 10^{32}$
 
-**_model_PINN_actual_1_**: contains all the PINN model at different epochs in the optimization process and can be used to generate different results. The results here are corresponding to $\lambda_1 = 1$ and $\lambda_2 = 1$
+c) **_model_PINN_actual_1_**: contains all the PINN model at different epochs in the optimization process and can be used to generate different results. The results here are corresponding to $\lambda_1 = 1$ and $\lambda_2 = 1$
 
-**_Scripts_**: contains following scripts:
+d) **_Scripts_**: contains following scripts:
 
 **_generate_data.py_**: is used to generate data in a csv file and save it inot **_Data_** folder. The model is being trained by the data stored in th3e csv file present in the Data folder. Note that during training, we need to mention the csv file that contains the relevant data.
 
@@ -43,7 +43,7 @@ Folders:
 
 **_Surface_potential.py_**: This script is used to generate the surface potential from SPE (refer paper).
 
-**_Figures_**: Contains all the figures presented in the paper.
+e) **_Figures_**: Contains all the figures presented in the paper.
 
 
 
