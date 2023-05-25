@@ -19,4 +19,5 @@ learn the physical mechanism of the MOS capacitor rather
 memorizing the training results.
 
 Getting acquinted to the scripts:
+
 _A_ODE_all_tox_NA.py_ is the one that has the model presented in the paper. It takes the following arguments:
