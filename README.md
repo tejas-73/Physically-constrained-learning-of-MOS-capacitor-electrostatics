@@ -43,6 +43,8 @@ Folders:
 
 **_Surface_potential.py_**: This script is used to generate the surface potential from SPE (refer paper).
 
+**_Figures_**: Contains all the figures presented in the paper.
+
 
 
 <!-- It takes the following arguments:
