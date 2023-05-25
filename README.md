@@ -21,7 +21,15 @@ memorizing the training results.
 
 Getting acquinted to the scripts:
 
-_A_ODE_all_tox_NA.py_ is the one that has the model presented in the paper. 
+**_A_ODE_all_tox_NA.py_**: is the script to run model optimization as presented in the paper. 
+
+**_PINN.py_**: is the model formulation with PINN approach
+
+Folders:
+
+**_model_checkpoint_** contains all the models at different epochs in the optimization process and can be used to generate different results.
+
+**__**
 
 <!-- It takes the following arguments:
 
