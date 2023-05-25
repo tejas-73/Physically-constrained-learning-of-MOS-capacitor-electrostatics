@@ -21,7 +21,9 @@ memorizing the training results.
 
 Getting acquinted to the scripts:
 
-_A_ODE_all_tox_NA.py_ is the one that has the model presented in the paper. It takes the following arguments:
+A_ODE_all_tox_NA.py_ is the one that has the model presented in the paper. 
+
+<!-- It takes the following arguments:
 
 **Vgs**: type=float, Value of Vgs. Used during inference
 
@@ -47,5 +49,5 @@ _A_ODE_all_tox_NA.py_ is the one that has the model presented in the paper. It t
 
 **test_data_reference**: type=str, tag for dataset to choose for training. Ensure this to be same as training_data_reference
 
-**update_text_file**: type=int, Update the text file. Ensure this to be zero. This is when in case mistakenly you type a save_model_tag to be the one which already exists. In case if you wish to update, then keep 1.
+**update_text_file**: type=int, Update the text file. Ensure this to be zero. This is when in case mistakenly you type a save_model_tag to be the one which already exists. In case if you wish to update, then keep 1. -->
 
