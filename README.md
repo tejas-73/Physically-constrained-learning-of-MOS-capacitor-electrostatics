@@ -37,7 +37,7 @@ c) **_model_PINN_actual_1_**: contains all the PINN model at different epochs in
 
 d) **_Scripts_**: contains following scripts:
 
-**_generate_data.py_**: is used to generate data in a csv file and save it inot **_Data_** folder. The model is being trained by the data stored in th3e csv file present in the Data folder. Note that during training, we need to mention the csv file that contains the relevant data.
+**_generate_data.py_**: is used to generate data in a csv file and save it inot **_Data_** folder. The model is being trained by the data stored in the csv file present in the Data folder. Note that during training, we need to mention the csv file that contains the relevant data.
 
 **_solve_bvp_any_fun.py_**: This is used to generate the spline method based solution to the PBE. This is being called by the main scripts.
 
