@@ -19,7 +19,7 @@ learn the physical mechanism of the MOS capacitor rather
 memorizing the training results.
 
 
--> Getting acquinted to the scripts:
+-> Getting acquinted to the main scripts:
 
 a) **_A_ODE_all_tox_NA.py_**: is the script to run model optimization as presented in the paper. 
 
@@ -44,6 +44,8 @@ d) **_Scripts_**: contains following scripts:
 **_Surface_potential.py_**: This script is used to generate the surface potential from SPE (refer paper).
 
 e) **_Figures_**: Contains all the figures presented in the paper.
+
+f) **_Data_**: This folder contains the data in a csv file. The _generate_data.py_ script will put the data in here. Also the main scripts will extract data from this folder.
 
 
 
