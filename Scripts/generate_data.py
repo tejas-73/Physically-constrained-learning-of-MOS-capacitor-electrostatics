@@ -109,9 +109,9 @@ df_b_0 = df[df['y'] == 0]
 df_b_1 = df[df['y'] == 2e-7]
 
 if parse.save_csv_file:
-    df.to_csv(f'../Data/data_y_100_100_58_vg_100_50_100_{file_name}.csv', header=True, index=False)
-    df_b_0.to_csv('../Data/data_bc1_vg_100_50_100.csv', header=True, index=False)
-    df_b_1.to_csv('../Data/data_bc2_vg_100_50_100.csv', header=True, index=False)
+    df.to_csv(f'../Data/data_y_100_100_58_vgs_100_50_100_{file_name}.csv', header=True, index=False)
+    df_b_0.to_csv('../Data/data_bc1_vgs_100_50_100.csv', header=True, index=False)
+    df_b_1.to_csv('../Data/data_bc2_vgs_100_50_100.csv', header=True, index=False)
 
 yy = np.linspace(0, t_si, 1000)
 psii = np.zeros((2, yy.size))
