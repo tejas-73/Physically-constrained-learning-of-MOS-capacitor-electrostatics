@@ -45,7 +45,7 @@ parse = parser.parse_args()
 sigmoid_coeff = 40
 n_hid = 3
 scale_factor = 1
-mid_neurons = 60 #
+mid_neurons = 50 #
 parse.t_ox = torch.tensor(parse.t_ox * 1e-9, requires_grad=False).to(device).reshape((-1, 1))
 parse.N_A = torch.tensor(parse.N_A * 1e24, requires_grad=False).to(device).reshape((-1, 1))
 
