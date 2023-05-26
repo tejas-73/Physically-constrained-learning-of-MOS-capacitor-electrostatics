@@ -39,9 +39,9 @@ d) **_Scripts_**: contains following scripts:
 
 **_generate_data.py_**: is used to generate data in a csv file and save it inot **_Data_** folder. The model is being trained by the data stored in th3e csv file present in the Data folder. Note that during training, we need to mention the csv file that contains the relevant data.
 
-**_solve_bvp_any_fun.py_**: This is used to generate the spline method based solution to the PBE. This is being reffered in the main scripts.
+**_solve_bvp_any_fun.py_**: This is used to generate the spline method based solution to the PBE. This is being called by the main scripts.
 
-**_Surface_potential.py_**: This script is used to generate the surface potential from SPE (refer paper).
+**_Surface_potential.py_**: This script is used to generate the surface potential from SPE.
 
 e) **_Figures_**: Contains all the figures presented in the paper.
 
