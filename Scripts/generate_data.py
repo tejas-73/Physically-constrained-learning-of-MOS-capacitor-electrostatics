@@ -62,7 +62,7 @@ def fun(y, psi):
 def bc(psi_a, psi_b):
     Cox = epsilon_sio2/t_ox
     B = Cox/epsilon_si
-    first = +psi_a[1] + B*(Vg - psi_a[0])
+    first = +psi_a[1] + B*(Vgs - psi_a[0])
     second = psi_b[0]
     return np.array([first, second])
 
@@ -73,19 +73,19 @@ psi = np.zeros((2, y.size))
 fig, ax = plt.subplots(figsize=(12, 10))
 fig.set_dpi(200)
 if not parse.save_csv_file:
-    V_g = v_t * np.array([-3, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 3])
+    V_gs = v_t * np.array([-3, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 3])
 else:
-    V_g = np.linspace(-3*v_t, 3*v_t, 1200)
+    V_gs = np.linspace(-3*v_t, 3*v_t, 1200)
 psi_out = []
-for i in V_g:
-    Vg = i
+for i in V_gs:
+    Vgs = i
     print(f"Solved for V_G = {i}")
     sol = solve_bvp(fun, bc, y, psi, tol=1e-6, max_nodes=20000)
     plt.plot(y, (sol.sol(y)[0]), label='$V_{G}$=' + '%.2f'%i + ' V')
     psi_out.append(list(sol.sol(y)[0]))
 plt.xlabel("Vertical Distance, y(nm)", fontsize=20)
 plt.ylabel("Potential, $\Psi(y)$    (V)", fontsize=20)
-plt.legend(['$V_{G}$=' + str(i) + ' V' for i in list(V_g)])
+plt.legend(['$V_{G}$=' + str(i) + ' V' for i in list(V_gs)])
 plt.xticks(fontsize=15)
 plt.yticks(fontsize=15)
 ticks = np.round_(ax.get_xticks()[1:]*10**9)
@@ -98,11 +98,11 @@ psi_out = np.array(psi_out)
 psi_out = psi_out.flatten()
 V_g_1 = []
 loss_weight = []
-for i in V_g:
+for i in V_gs:
     V_g_1 += [i]*len(list(y))
     loss_weight.append(weight_to_loss)
 
-df = {'y':list(y)*len(list(V_g)), 'V_g':V_g_1, 'psi': list(psi_out)}
+df = {'y':list(y)*len(list(V_g)), 'Vgs':V_g_1, 'psi': list(psi_out)}
 df = pd.DataFrame(df)
 
 df_b_0 = df[df['y'] == 0]
@@ -115,11 +115,11 @@ if parse.save_csv_file:
 
 yy = np.linspace(0, t_si, 1000)
 psii = np.zeros((2, yy.size))
-V_g = np.linspace(-5, 5, 50)
+V_gs = np.linspace(-5, 5, 50)
 psi_zero = []
 psi_zero_pred = []
-for i in V_g:
-    Vg = i
+for i in V_gs:
+    Vgs = i
     sol = solve_bvp(fun, bc, yy, psii, tol=1e-3, max_nodes=20000)
     psi_zero.append(sol.sol(yy)[0][0])
 
@@ -128,7 +128,7 @@ fig, ax = plt.subplots(figsize=(12, 8))
 fig.set_dpi(200)
 ax.axvline(-0.6, ls='--', lw=1, c='#000000')
 ax.axvline(1.2, ls='--', lw=1, c='#000000')
-plt.plot(V_g/v_t, np.array(psi_zero)/psi_P)
+plt.plot(V_gs/v_t, np.array(psi_zero)/psi_P)
 plt.xlabel("$V_{G}/V_T$", fontsize=20)
 plt.ylabel("$\Psi_s/Psi_B$", fontsize=20)
 plt.xticks([i for i in range(-5, 6)], fontsize=15)
