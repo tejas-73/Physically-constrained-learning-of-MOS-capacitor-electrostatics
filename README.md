@@ -31,7 +31,7 @@ Remaining scripts are being utilized by these two scripts.
 
 a) **_model_checkpoint_**: contains all the model saved at different epochs in the optimization process and can be used to generate different results.
 
-b) **_model_PINN_actual_**: contains all the PINN model at different epochs in the optimization process and can be used to generate different results. The results here are corresponding to $\lambda_1 = 10^{16}$ and $\lambda_2 = 10^{32}$
+b) **_model_PINN_actual_**: contains all the PINN model at different epochs in the optimization process and can be used to generate different results. The results here are corresponding to $\lambda_1 = 10^{16}$ and $\lambda_2 = 10^{34}$
 
 c) **_model_PINN_actual_1_**: contains all the PINN model at different epochs in the optimization process and can be used to generate different results. The results here are corresponding to $\lambda_1 = 1$ and $\lambda_2 = 1$
 
