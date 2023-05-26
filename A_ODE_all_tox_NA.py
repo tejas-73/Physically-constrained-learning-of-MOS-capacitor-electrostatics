@@ -310,7 +310,6 @@ if __name__ == '__main__':
                 for p in optimizer.param_groups:
                     p['lr'] *= 0.9 #decreasing the learning rate to 90%
                 loss_list.pop()
-            print(f'Number of nans encountered: {nans_encountered}')
             np.save(f'{parse.save_model_tag}_training_loss.npy', np.array(loss_list)) #this is to observe how the loss is decreasing in subsequent epochs
 
 
