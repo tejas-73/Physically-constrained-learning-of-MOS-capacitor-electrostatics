@@ -620,7 +620,7 @@ if __name__ == '__main__':
 
         if index == len(array) - 1 and parse.batch_size != 0:
             plt.plot(test_surface_vgs / v_t.item(), np.array(surface_potential)/psi_F.item())
-            plt.plot(test_surface_vgs / v_t.item(), np.arrray(psi0_list)/psi_F.item())
+            plt.plot(test_surface_vgs / v_t.item(), np.array(psi0_list)/psi_F.item())
             plt.title("Surface Potential")
             plt.xlabel("$V_G$ / $V_T$ ")
             plt.ylabel("$\Psi_s$ / $\Psi_B$")
