@@ -533,7 +533,7 @@ if __name__ == '__main__':
             predict(model, None, parse.Vgs * v_t, parse.t_ox, parse.N_A,
                     save_name=f'normv={parse.Vgs}_NA={parse.N_A.item() :e}_tox={parse.t_ox.item() :e}',
                     fem_predictions=fem_predictions[0], v_t=v_t.item(),
-                    if_use_y=torch.linspace(0, t_si, 3000, dtype=torch.float64).reshape(-1, ).to(device))  # saving all the predictions in an excel file. This is saving again the profile.
+                    if_use_y=torch.linspace(0, t_si, 3000, dtype=torch.float64).reshape(-1, ).to(device), psi_b=psi_P)  # saving all the predictions in an excel file. This is saving again the profile.
             #exiting so that further code is not executed
             exit('Exit at line 543 after saving the predictions for the desired voltages in numpy format')
 
