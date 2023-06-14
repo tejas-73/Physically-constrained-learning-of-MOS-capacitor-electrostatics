@@ -29,13 +29,15 @@ Remaining scripts are being utilized by these two scripts.
 
 -> Folders:
 
-a) **_model_checkpoint_**: contains all the models saved at different epochs in the optimization process and can be used to generate different results.
+a) **_model_checkpoint_**: contains all the models saved at different epochs in the optimization process.
 
-b) **_model_PINN_actual_**: contains all the PINN model at different epochs in the optimization process and can be used to generate different results. The results here are corresponding to $\lambda_1 = 10^{16}$ and $\lambda_2 = 10^{34}$
+b) **_model_final_**: contains the final model that has been used to generate the results presented in the paper.
 
-c) **_model_PINN_actual_1_**: contains all the PINN model at different epochs in the optimization process and can be used to generate different results. The results here are corresponding to $\lambda_1 = 1$ and $\lambda_2 = 1$
+c) **_model_PINN_actual_**: contains all the PINN model at different epochs in the optimization process and can be used to generate different results. The results here are corresponding to $\lambda_1 = 10^{16}$ and $\lambda_2 = 10^{34}$
 
-d) **_Scripts_**: contains following scripts:
+d) **_model_PINN_actual_1_**: contains all the PINN model at different epochs in the optimization process and can be used to generate different results. The results here are corresponding to $\lambda_1 = 1$ and $\lambda_2 = 1$
+
+e) **_Scripts_**: contains following scripts:
 
 **_generate_data.py_**: is used to generate data in a csv file and save it inot **_Data_** folder. The model is being trained by the data stored in the csv file present in the Data folder. Note that during training, we need to mention the csv file that contains the relevant data.
 
@@ -43,9 +45,9 @@ d) **_Scripts_**: contains following scripts:
 
 **_Surface_potential.py_**: This script is used to generate the surface potential from SPE.
 
-e) **_Figures_**: Contains all the figures presented in the paper.
+f) **_Figures_**: Contains all the figures presented in the paper.
 
-f) **_Data_**: This folder contains the data in a csv file. The _generate_data.py_ script will put the data in here. Also the main scripts will extract data from this folder.
+g) **_Data_**: This folder contains the data in a csv file. The _generate_data.py_ script will put the data in here. Also the main scripts will extract data from this folder.
 
 
 
