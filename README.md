@@ -1,5 +1,28 @@
 # Physically constrained learning of MOS capacitor electrostatics
-Recent years have witnessed the unprecedented success of neural network models for diverse applications, from image and speech recognition to solving differential equations. The focus of this work is on the latter applications. In particular, we were motivated by the question: can simple feedforward neural networks learn the physical principles of a MOS (metal-oxide-semiconductor) capacitor, without using labeled data? We proceeded by solving the governing Poisson-Boltzmann equation using PINNs (Physics Informed Neural Networks) which have shown much promise. We optimized the PINN model over gate voltage, oxide thickness, and doping concentration, which all together exacerbate the complexity offered by the equation. The important finding is that the model accuracy can be significantly improved by enforcing exact boundary conditions and using log-L1 loss. We demonstrate that the proposed model can accurately capture critical insights like the depletion width, threshold voltage, inversion charge, etc. We also show that the network can extrapolate beyond the sampling domain.
+In recent years, neural networks have achieved phenome-
+nal success across a wide range of applications. Neural net-
+works have also proven useful for solving differential equa-
+tions. The focus of this work is on the Poisson-Boltzmann
+equation (PBE) that governs the electrostatics of a metal-
+oxide-semiconductor (MOS) capacitor. We were motivated
+by the question of whether a neural network can effectively
+learn the solution of PBE using the methodology pioneered
+by Lagaris et al. (IEEE Trans. Neural Networks 9 (1998)).
+In this method, a neural network is used to generate a set
+of trial solutions that adhere to the boundary conditions,
+which are then optimized using the governing equation.
+However, the challenge with this method is the lack of a
+generic procedure for creating trial solutions for intricate
+differential equations. In this work, we present an innova-
+tive technique for constructing trial solutions tailored to
+the highly nonlinear PBE while satisfying the Robin and
+Dirichlet boundary conditions derived from MOS device
+physics. Remarkably, by training the network parameters,
+we can compute an optimal trial solution that accurately
+captures essential physical insights, such as the depletion
+width, threshold voltage, and inversion charge. Further-
+more, we show that our functional solution can extend
+beyond the training domain.
 
 
 -> Getting acquinted to the main scripts:
